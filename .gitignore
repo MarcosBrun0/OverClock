@@ -1,0 +1,59 @@
+# ==========================================
+# Dependências
+# ==========================================
+node_modules/
+
+# ==========================================
+# Arquivos de Build / Compilação do TypeScript
+# ==========================================
+dist/
+build/
+*.tsbuildinfo
+
+# ==========================================
+# Variáveis de Ambiente e Segredos
+# ==========================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.pem
+
+# ==========================================
+# Logs
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+# Ferramentas de Teste e Cobertura
+# ==========================================
+coverage/
+.nyc_output/
+
+# ==========================================
+# Arquivos do Sistema Operacional
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# Configurações Locais de Editores / IDEs
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

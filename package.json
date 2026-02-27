@@ -1,0 +1,28 @@
+{
+  "name": "overclock",
+  "version": "1.0.0",
+  "description": "",
+  "private":true,
+  "workspaces": ["packages/*","apps/*"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosBrun0/OverClock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/MarcosBrun0/OverClock/issues"
+  },
+  "homepage": "https://github.com/MarcosBrun0/OverClock#readme",
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+
+}
