@@ -1,9 +1,10 @@
 import Versions from './components/Versions'
 import electronLogo from './assets/electron.svg'
+import { calculateOverclockLimit } from '@overclock/core'
 
 function App(): React.JSX.Element {
   const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
-
+  const limite = calculateOverclockLimit(4000)
   return (
     <>
       <img alt="logo" className="logo" src={electronLogo} />
@@ -25,6 +26,9 @@ function App(): React.JSX.Element {
           <a target="_blank" rel="noreferrer" onClick={ipcHandle}>
             Send IPC
           </a>
+        </div>
+        <div>
+          <p>numero teste {limite}</p>
         </div>
       </div>
       <Versions></Versions>
