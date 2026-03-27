@@ -21,5 +21,9 @@ export class Duration {
     const m = this.minutes % 60; //isola minutos de horas 
     if (h > 0) { return `${h}h ${m}min` }
     return `${m}min`
+
+  }
+  add(other: Duration) {
+    return Duration.fromSeconds(this.seconds + other.seconds);
   }
 }
